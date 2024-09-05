@@ -39,10 +39,24 @@ p {
   margin-left: 100px;
 }
 
+ul.list {
+  color: rgb(0, 0, 0);
+  font-family: 'Courier New', Courier, monospace;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
 p.bold-quote {
-  font-style: italic;
   font-weight: bold;
   text-align: left;
+  text-indent: 20px;
+}
+
+p.italics-sub {
+  font-weight: lighter;
+  font-style: italic;
   text-indent: 20px;
 }
 
@@ -78,7 +92,7 @@ footer {
   padding-top: 50px;
   padding-bottom: 50px;
 }
-a {
+a.dev {
   font-family: 'Courier New', Courier, monospace;
   margin-left: 100px;
 }
@@ -101,7 +115,7 @@ a:hover {
 a:active {
   color: lightgray;
 }
-ul {
+ul.navigation {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -110,7 +124,7 @@ ul {
   background-color: #d0c4c4;
 }
 
-li {
+li.float {
   float: left;
 }
 
