@@ -95,6 +95,7 @@ footer {
 }
 a.dev {
   font-family: 'Courier New', Courier, monospace;
+  text-align: left;
 }
 /* unvisited link */
 a:link {
