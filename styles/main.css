@@ -95,7 +95,6 @@ footer {
 }
 a.dev {
   font-family: 'Courier New', Courier, monospace;
-  margin-left: 100px;
 }
 /* unvisited link */
 a:link {
@@ -120,7 +119,7 @@ ul.navigation {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  overflow: auto;
   background-color: #d0c4c4;
 }
 
@@ -138,6 +137,6 @@ li a {
 
 li a:hover {
   background-color: #ddd;
-  border: 0.5px solid #ae9999;
+  border: 0.5px hidden #beb4b4;
   border-radius: 25px;
 }
