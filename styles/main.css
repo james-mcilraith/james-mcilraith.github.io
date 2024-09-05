@@ -6,6 +6,16 @@ h1 {
   font-family: Arial, Helvetica, sans-serif;
   margin: 100px;
 }
+h2 {
+  color: rgb(0, 0, 0);
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 100px;
+}
+h3 {
+  color: rgb(0, 0, 0);
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 100px;
+}
 p {
   color: rgb(0, 0, 0);
   font-family: Arial, Helvetica, sans-serif;
