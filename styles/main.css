@@ -75,6 +75,8 @@ header {
   padding-bottom: 10px;
   text-align: left;
   font-size: 25px;
+  max-width: none;
+  min-height: min-content;
 }
 
 /* The article content */
