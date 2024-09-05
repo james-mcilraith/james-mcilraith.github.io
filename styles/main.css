@@ -56,29 +56,54 @@ article {
 /* The footer */
 footer {
   background-color: #f3f2f1;
-  padding: 10px;
+  text-align: left;
 }
 a {
   font-family: 'Courier New', Courier, monospace;
-  text-align: center;
   padding: 100px;
 }
 /* unvisited link */
 a:link {
-  color: blue;
+  color: black;
 }
 
 /* visited link */
 a:visited {
-  color: blue;
+  color: black;
 }
 
 /* mouse over link */
 a:hover {
-  color: lightblue;
+  color: lightgrey;
 }
 
 /* selected link */
 a:active {
-  color: lightblue;
+  color: lightgray;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #e7e7e7;
+  background-color: #d0c4c4;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #d0c4c4;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #ddd;
+  border: 0.5px solid #ae9999;
+  border-radius: 25px;
 }
