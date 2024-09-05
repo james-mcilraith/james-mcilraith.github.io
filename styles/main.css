@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(243, 242, 241);
+  background-color: #f3f2f1;
 }
 h1 {
   color: rgb(0, 0, 0);
@@ -8,16 +8,77 @@ h1 {
 }
 h2 {
   color: rgb(0, 0, 0);
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 100px;
+  font-family: 'Courier New', Courier, monospace;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-right: 100px;
+  margin-left: 100px;
 }
 h3 {
   color: rgb(0, 0, 0);
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 100px;
+  font-family: 'Courier New', Courier, monospace;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-right: 100px;
+  margin-left: 100px;
 }
 p {
   color: rgb(0, 0, 0);
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 100px;
+  font-family: 'Courier New', Courier, monospace;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* The header */
+header {
+  background-color: #d0c4c4;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: left;
+  font-size: 20px;
+}
+
+/* The article content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f3f2f1;
+  padding: 10px;
+}
+
+/* The footer */
+footer {
+  background-color: #f3f2f1;
+  padding: 10px;
+}
+a {
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  padding: 100px;
+}
+/* unvisited link */
+a:link {
+  color: blue;
+}
+
+/* visited link */
+a:visited {
+  color: blue;
+}
+
+/* mouse over link */
+a:hover {
+  color: lightblue;
+}
+
+/* selected link */
+a:active {
+  color: lightblue;
 }
