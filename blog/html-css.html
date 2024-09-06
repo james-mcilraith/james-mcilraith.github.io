@@ -6,7 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="noindex" />
     <link rel="stylesheet" type="text/css" href="../styles/main.css" />
-    <!--<style></style>-->
+
+    <style>table {
+      font-family: 'Courier New', Courier, monospace;
+      border-collapse: collapse;
+      margin-left: 100px;
+      margin-right: 100px;
+      width: auto;
+    }
+    
+    td, th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+    
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+    </style>
   </head>
 
   <body>
@@ -38,19 +56,218 @@
       <!--<li><a href="#contact">Contact</a></li>-->
     </ul>
 
+    <article>
     <div>
       <header>
         <h1>Technical blog</h1>
       </header>
 
-      <article>
-        <h2>What is the difference between Margin, Border, and Padding?</h2>
+      
         <h4>Friday, 06 September 2024</h4>
-        <p>This is another paragraph.</p>
-        <p>This is the last paragraph.</p>
-      </article>
+        <h2>What is the difference between Margin, Border, and Padding?</h2>
+
+        <p>
+          Margins, borders, and padding are key to web design layout and the
+          visual effect you are trying to achieve with your content.
+        </p>
+        <p>
+          HTML (Hypertext Markup Language) and CSS (Cascading Style Sheets) are
+          two key languages necessary for creating webpages. HTML sets the
+          content and structure of a webpage. CSS determines its design and
+          display.
+        </p>
+        <p>
+          Margins, borders, and padding are the spaces around your HTML content
+          and between your HTML structure. CSS sets the design and display
+          parameters for your margins, borders, and padding.
+        </p>
+
+        <ul class="list" style="list-style: circle">
+          <li>
+            <b>Content:</b> Your content where text, images, videos, and links
+            appear.
+          </li>
+          <li>
+            <b>Padding:</b> This is the space around your content. And between
+            your content and any border.
+          </li>
+          <li>
+            <b>Border:</b> The border goes around your padding and content.
+            Borders can be transparent or non-transparent.
+          </li>
+          <li>
+            <b>Margin</b> The defined space around or outside the border. The
+            margin is transparent.
+          </li>
+        </ul>
+
+        <p>
+          The <b>CSS Box</b> below illustrates margins, borders, and padding in
+          relation to content. It is used for webpage design and layout as
+          almost all HTML elements in a webpage sit in a CSS Box comprised
+          margins, borders, and padding in relation to content.
+        </p>
+
+        <p>
+          <img
+            src="../images/CSS-Box-Hubspot.jpg"
+            alt="CSS Box"
+            style="width: 500px; height: auto"
+          />
+        </p>
+
+        <p>
+          The padding property controls the space inside an element, the margin
+          property controls the space outside an element, and the border
+          property controls the space (or border line) between the two.
+        </p>
+
+
+        <style>
+          div.example {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: lightgrey;
+            width: 500px;
+            border: 20px solid blue;
+            padding: 50px;
+            margin: 20px;
+            margin-left: 100px;
+          }
+        </style>
+
+        <p>
+          The CSS Box wraps around every HTML content element. It consists of
+          padding, borders, and margins.
+        </p>
+
+        <h5>Demonstrating the CSS Box</h5>
+      </div>
+
+        <div class="example">
+          The following text code demonstrates this CSS Box:
+          <i
+            >background-color: lightgrey; width: 500px; border: 20px solid blue;
+            padding: 50px; margin: 20px; margin-left: 100px;</i
+          >
+          Check out the internal code using the
+          <a
+            href="https://developer.chrome.com/docs/devtools/open#chrome-menu"
+            target="_blank"
+            >DevTools inspect function!</a
+          ></div>
+
+<div>
+          <p>
+            Generally, you should use margins when you are adjusting the spacing
+            of an element in relation to another element and padding when you
+            are adjusting the look of an individual element. And borders where
+            needed for effect.
+          </p>
+
+          <ul class="list" style="list-style: circle">
+            <li>
+              The padding of content elements can be defined by the
+              <b>padding-top, padding-bottom, padding-left,</b> and
+              <b>padding-right</b> properties, or the shorthand
+              <b>padding</b> property depending on whether you want to set
+              different padding for each side of the CSS Box or the same for
+              each side.
+            </li>
+            <li>
+              The border adds a line around the content-padding area. The border
+              line color, style, and thickness can be defined by the
+              <b>border-width, border-color,</b> and
+              <b>border-style</b> properties. Or the shorthand
+              <b>border</b> property can define these. Border-style values
+              include dashed, dotted, double, groove, ridge, and none.
+            </li>
+            <li>
+              The margin is the empty space outside the content-padding-border
+              and between any neighboring elements. Its size can be defined by
+              the <b>margin-left, margin-right, margin-top,</b> and
+              <b>margin-bottom</b> properties, or the shorthand
+              <b>margin</b> property.
+            </li>
+          </ul>
+
+          <p>
+            There are some crucial differences between padding and margins. For
+            example, the background padding area of a CSS Box is specified by
+            the background property of the element while margin backgrounds are
+            always transparent. Padding increases the size of an element, while
+            margins increase the gaps between an element and its neighbors. And
+            element padding areas do not combine, while in CSS, margins that
+            adjoin can combine to form a single collapsed margin. These are set out in the table below.
+          </p>
+
+          <h5>Padding and margin differences</h5>
+
+          <table>
+            <tr>
+              <th>Differences</th>
+              <th>Padding</th>
+              <th>Margin</th>
+            </tr>
+            <tr>
+              <td>Position in CSS Box</td>
+              <td>Internal space</td>
+              <td>External space</td>
+            </tr>
+            <tr>
+              <td>Effect on element size</td>
+              <td>Increases size</td>
+              <td>Affects layout spacing</td>
+            </tr>
+            <tr>
+              <td>Interaction with background and border</td>
+              <td>Extends background and affects borders</td>
+              <td>No interaction with the background / border</td>
+            </tr>
+            <tr>
+              <td>Collapsing margins</td>
+              <td>No collapse</td>
+              <td>Can collapse</td>
+            </tr>
+            <tr>
+              <td>Spacing control</td>
+              <td>Controls internal spacing</td>
+              <td>Controls external distance</td>
+            </tr>
+            <tr>
+              <td>Influence on clickable areas</td>
+              <td>Expands clickable area</td>
+              <td>Doesn't affect clickable areas</td>
+            </tr>
+            <tr>
+              <td>Visibility in backgrounds</td>
+              <td>Background extends and enhances appeal</td>
+              <td>Doesn't extend background</td>
+            </tr><tr>
+              <td>Adaptability in Responsive Design</td>
+              <td>Crucial for responsive design</td>
+              <td>Uniform arrangement across devices</td>
+            </tr><tr>
+              <td>Interplay with CSS Box sizing</td>
+              <td>Influenced by box-sizing</td>
+              <td>Consistent regardless of box-sizing</td>
+            </tr><tr>
+              <td>Overlap and collisions</td>
+              <td>May cause overlap</td>
+              <td>Prevents overlap</td>
+            </tr>
+          </table>
+
+          <div>
+<h4>Key references</h4>
+
+<p>Hubspot <a href=https://blog.hubspot.com/website/css-box-model target="_blank">A Basic Walkthrough of the CSS Box Model</a></p>
+<p>Hubspot <a href=https://blog.hubspot.com/website/css-margin-vs-padding target="_blank">CSS Margin vs. Padding: What's the Difference?</a></p>
+<p>W3 Schools <a href=https://www.w3schools.com/css/css_boxmodel.asp target="_blank">CSS Box model</a></p>
+<p>Webflow <a href=https://webflow.com/blog/padding-vs-margin target="_blank">CSS padding vs. margin: What’s the difference?</a></p>
+      
     </div>
 
+  </article>
     <footer>
       <p class="bold">Footer links</p>
       <p>
