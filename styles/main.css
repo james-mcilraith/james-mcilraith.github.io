@@ -78,7 +78,6 @@ p.bold {
   box-sizing: border-box;
 }
 
-/* The header */
 header {
   background-color: #d0c4c4;
   padding-top: 10px;
@@ -88,7 +87,6 @@ header {
   max-width: none;
 }
 
-/* The article content */
 article {
   -webkit-flex: 3;
   -ms-flex: 3;
@@ -96,7 +94,6 @@ article {
   background-color: #f3f2f1;
 }
 
-/* The footer */
 footer {
   background-color: #f3f2f1;
   text-align: left;
@@ -107,22 +104,18 @@ a.dev {
   font-family: 'Courier New', Courier, monospace;
   text-align: left;
 }
-/* unvisited link */
 a:link {
   color: black;
 }
 
-/* visited link */
 a:visited {
   color: black;
 }
 
-/* mouse over link */
 a:hover {
   color: lightgrey;
 }
 
-/* selected link */
 a:active {
   color: lightgray;
 }
